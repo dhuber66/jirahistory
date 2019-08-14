@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _counter = <int>[];
   final _biggerFont = const TextStyle(fontSize: 18.0);
 
-  VoidCallback _incrementCounter(index) {
+  void _incrementCounter(index) {
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter[index]++;
     });
-  }
+   }
 
   Widget _buildRow(index) {
     return new ListTile(
